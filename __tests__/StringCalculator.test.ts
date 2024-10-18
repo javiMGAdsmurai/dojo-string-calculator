@@ -16,4 +16,12 @@ describe('WHEN add without number', () => {
 
     expect(result).toBe(value.expected)
   });
+
+  it('should return sum when split string', () => {
+    const expected = 3;
+
+    const result = StringCalculator.add('1,2');
+
+    expect(result).toBe(expected);
+  });
 });
