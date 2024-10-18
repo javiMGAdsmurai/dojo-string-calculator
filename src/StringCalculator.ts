@@ -2,7 +2,8 @@ export class StringCalculator {
     public static add(value:string): number {
         if(value === '') return 0
 
-        const arrayValues = value.split(',');
+        const formattedValues = value.replaceAll('\n', ',')
+        const arrayValues = formattedValues.split(',');
 
         let number = 0
         

@@ -24,4 +24,12 @@ describe('WHEN add without number', () => {
 
     expect(result).toBe(expected);
   });
+
+  it('should return sum number from string', () => {
+    const expected = 6;
+
+    const result = StringCalculator.add('1\n2,3');
+
+    expect(result).toBe(expected);
+  });
 });
